@@ -1,0 +1,222 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing:border-box;
+}
+:root{
+    --box-shadow:0px 2px 5px 0px rgba(0,0,0,0.75);
+    --ben-color:gray;
+    --sara-color:whitesmoke;
+    --background-main:lightgray;
+}
+header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    position: fixed;
+    top:0px;
+    z-index: 3;
+}
+header nav{
+    display:flex;
+    align-items: center;
+    padding:10px;
+    background-color:var(--background-main);
+    box-shadow: var(--box-shadow);
+}
+.nav-logo{
+    padding:3px 7px;
+}
+.nav-item{
+    padding:3px 7px;
+    text-decoration: none;
+    color:black;
+}
+.nav-item:hover{
+    color:var(--sara-color);
+    background-color:var(--ben-color);
+    border-radius: 5px;
+}
+main{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#profiles{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    min-width: 100%;
+    box-shadow: var(--box-shadow);
+    background-color:var(--sara-color);
+    z-index: 2;
+}
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 50%;
+    padding:100px 0px;
+}
+.profile-card{
+    display:flex;
+    justify-content: Center;
+    align-items: center;
+    flex-direction: column;
+    background:lightgrey;
+    padding:20px;
+    box-shadow:var(--box-shadow);
+    border-radius: 10px;
+    max-width:90vw;
+}
+.together-card{
+    background:var(--sara-color);
+}
+
+.profile-img{
+    width:20vw;
+    height: auto;
+}
+.profile-header{
+    font-size:3rem;
+    margin:15px;
+}
+.profile-header-secondary{
+    font-size:2rem;
+    margin:15px;
+}
+#ben{
+    /* background-color:var(--ben-color); */
+    color:var(--ben-color);
+    /* background-image:url(img/ben-background-filter.png); */
+    background-size:cover;
+}
+#sara{
+    /* background-color:var(--sara-color); */
+    color:var(--ben-color);
+    /* background-image:url(img/sara-background-filter.png); */
+    background-size:cover;
+}
+.arrow{
+    width: 10vw;
+    padding:40px 20px 20px 20px;
+}
+footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    max-height: 50px;
+}
+#together{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width:100%;
+    background-color:var(--background-main);
+}
+
+.standard-section{
+    padding:50px 0;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color:white;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    background-color:rgba(0,0,0,0.5)
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    background-color:rgba(0,0,0,0.5);
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
