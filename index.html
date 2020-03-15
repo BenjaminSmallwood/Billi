@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billi Development</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d038786fec.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="nav-item" href="#profiles">Profiles</a>
+            <a class="nav-item" href="#together">Together</a>
+            <img class="nav-logo" src="https://picsum.photos/30">
+            <a class="nav-item" href="#projects">Projects</a>
+            <a class="nav-item" href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div id="splashPage">
+            <h1 class="splashHeader">BILLI</h1>
+        </div>
+        <div id="profiles">
+            <section id="ben" class="profile">
+                <div class="profile-card">
+                    <img class="profile-img" src="https://picsum.photos/300/300" alt="An image of Ben">
+                    <div class="profile-inner-container">
+                        <h3 class="profile-header ben-header">Ben Smallwood</h3>
+                        <h4 class="profile-header-secondary">Ben's Good at:</h4>
+                        <div class="profile-list">
+                            <div class="profile-sub-list">
+                                <span><i class="fab fa-js-square"></i></span>
+                                <div>JavaScript</div>
+                            </div>
+                            <div class="profile-sub-list">
+                                <span><i class="fas fa-database"></i></span>
+                                <div>System Development</div>
+                            </div>
+                            <div class="profile-sub-list">
+                                <span><i class="fas fa-exclamation-triangle"></i></span>
+                                <div>Problem Solving</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="profile-button" href="#">Meet Ben</a>
+                </div>
+            </section>
+            <section id="sara" class="profile">
+                <div class="profile-card">
+                    <img class="profile-img" src="https://picsum.photos/300/300" alt="An image of Sara">
+                    <div class="profile-inner-container">
+                        <h3 class="profile-header sara-header">Sara Willi</h3>
+                        <h4 class="profile-header-secondary">Sara's Good at:</h4>
+                        <div class="profile-list">
+                            <div class="profile-sub-list">
+                                <span><i class="fas fa-paint-brush"></i></span>
+                                <div>Design Principles</div>
+                            </div>
+                            <div class="profile-sub-list">
+                                <span><i class="fas fa-crop-alt"></i></span>
+                                <div>Best Practices</div>
+                            </div>
+                            <div class="profile-sub-list">
+                                <span><i class="fab fa-adobe"></i></span>
+                                <div>The Adobe Suite</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="profile-button" href="#">Meet Sara</a>
+                </div>
+            </section>
+        </div>
+        <section id="together" class="standard-section">
+            <div class="together-card">
+                <img class="profile-img" src="https://picsum.photos/300/300" alt="A combined image of Ben and Sara">
+                <div id="together-right">
+                    <h3 class="profile-header">Billi</h3>
+                    <h4 class="profile-header-secondary">We combined our skills and Billi was created!</h4>
+                    <p>With Ben's technical coding background and Sara's eye for design. Together they make a dynamic, efficent, and high-performing team.</p>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="standard-section">
+            <h4 class="profile-header">Some of our recent projects</h4>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="img/Project-1.PNG" style="width:100%">
+                    <div class="text">Smallwood Woodworking</div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="img/Project-2.PNG" style="width:100%">
+                    <div class="text">Benjamin Portfolio</div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="img/Project-3.PNG" style="width:100%">
+                    <div class="text">Sara Portfolio</div>
+                </div>
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+        <section id="contact" class="standard-section">
+            <h3 class="profile-header contact-header">What to work with us? Get in contact below!</h3>
+            <div class="container">
+                <form action="action_page.php">
+              
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+              
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit">
+              
+                </form>
+              </div>
+        </section>
+    </main>
+    <footer>
+        <p>This is a random disclaimer</p>
+    </footer>
+</body>
+</html>
