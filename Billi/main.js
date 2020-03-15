@@ -26,3 +26,13 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+
+$(window).scroll(function() {
+  $("header nav").css("background-color", "rgba(255, 255, 255, 0.25)")
+  clearTimeout($.data(this, 'scrollTimer'));
+  $.data(this, 'scrollTimer', setTimeout(function() {
+      // do something
+      $("header nav").css("background-color", "whitesmoke")
+  }, 250));
+});

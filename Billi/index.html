@@ -6,6 +6,9 @@
     <title>Billi Development</title>
     <link rel="stylesheet" href="styles.css">
     <script src="main.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d038786fec.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -18,44 +21,71 @@
         </nav>
     </header>
     <main>
+        <div id="splashPage">
+            <h1 class="splashHeader">BILLI</h1>
+        </div>
         <div id="profiles">
             <section id="ben" class="profile">
                 <div class="profile-card">
-                    <img class="profile-img" src="img/ben.jpg">
-                    <h3 class="profile-header">Ben Smallwood</h3>
-                    <h4 class="profile-header-secondary">Ben's Good at:</h4>
-                    <ul>
-                        <li>JavaScript!</li>
-                        <li>System Development!</li>
-                        <li>Problem Solving!</li>
-                    </ul>
+                    <img class="profile-img" src="https://picsum.photos/300/300" alt="An image of Ben">
+                    <div class="profile-inner-container">
+                        <h3 class="profile-header ben-header">Ben Smallwood</h3>
+                        <h4 class="profile-header-secondary">Ben's Good at:</h4>
+                        <div class="profile-list">
+                            <div class="profile-sub-list">
+                                <span><i class="fab fa-js-square"></i></span>
+                                <div>JavaScript</div>
+                            </div>
+                            <div class="profile-sub-list">
+                                <span><i class="fas fa-database"></i></span>
+                                <div>System Development</div>
+                            </div>
+                            <div class="profile-sub-list">
+                                <span><i class="fas fa-exclamation-triangle"></i></span>
+                                <div>Problem Solving</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="profile-button" href="#">Meet Ben</a>
                 </div>
-                <img class="arrow" src="img/iconfinder_DiagonalArrowDownRight_1031530.png">
             </section>
             <section id="sara" class="profile">
                 <div class="profile-card">
-                    <img class="profile-img" src="img/sara.jpg">
-                    <h3 class="profile-header">Sara Willi</h3>
-                    <h4 class="profile-header-secondary">Sara's Good at:</h4>
-                    <ul>
-                        <li>Design Principles!</li>
-                        <li>Best Practices!</li>
-                        <li>The Adobe Suite!</li>
-                    </ul>
+                    <img class="profile-img" src="https://picsum.photos/300/300" alt="An image of Sara">
+                    <div class="profile-inner-container">
+                        <h3 class="profile-header sara-header">Sara Willi</h3>
+                        <h4 class="profile-header-secondary">Sara's Good at:</h4>
+                        <div class="profile-list">
+                            <div class="profile-sub-list">
+                                <span><i class="fas fa-paint-brush"></i></span>
+                                <div>Design Principles</div>
+                            </div>
+                            <div class="profile-sub-list">
+                                <span><i class="fas fa-crop-alt"></i></span>
+                                <div>Best Practices</div>
+                            </div>
+                            <div class="profile-sub-list">
+                                <span><i class="fab fa-adobe"></i></span>
+                                <div>The Adobe Suite</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="profile-button" href="#">Meet Sara</a>
                 </div>
-                <img class="arrow" src="img/iconfinder_DiagonalArrowDownLeft_1031531.png">
             </section>
         </div>
         <section id="together" class="standard-section">
-            <div class="profile-card together-card">
-                <img class="profile-img" src="https://picsum.photos/300/300">
-                <h3 class="profile-header">Billi</h3>
-                <h4 class="profile-header-secondary">Here is us together</4>
-                <p>With Ben's technical coding background and Sara's eye for design. Together they make a dynamic, efficent, and high-performing team.</p>
+            <div class="together-card">
+                <img class="profile-img" src="https://picsum.photos/300/300" alt="A combined image of Ben and Sara">
+                <div id="together-right">
+                    <h3 class="profile-header">Billi</h3>
+                    <h4 class="profile-header-secondary">We combined our skills and Billi was created!</h4>
+                    <p>With Ben's technical coding background and Sara's eye for design. Together they make a dynamic, efficent, and high-performing team.</p>
+                </div>
             </div>
         </section>
         <section id="projects" class="standard-section">
-            <div class="profile-card">
+            <h4 class="profile-header">Some of our recent projects</h4>
             <!-- Slideshow container -->
             <div class="slideshow-container">
                 <!-- Full-width images with number and caption text -->
@@ -87,7 +117,6 @@
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
-        </div>
         </section>
         <section id="contact" class="standard-section">
             <h3 class="profile-header contact-header">What to work with us? Get in contact below!</h3>
